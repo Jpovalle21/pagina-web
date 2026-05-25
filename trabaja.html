@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabaja con Nosotros</title>
+
+<!-- TU CSS -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/chatbot.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!-- BOTÓN WHATSAPP -->
+<!-- CHATBOT WHATSAPP -->
+<div class="chatbot-container">
+
+    <!-- BOTÓN -->
+    <div class="chatbot-btn" id="chatbotBtn">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- CHAT -->
+    <div class="chatbot-chat" id="chatbotChat">
+
+        <div class="chat-header">
+            <span>Agro Ángeles</span>
+            <button id="chatbotClose">✕</button>
+        </div>
+
+        <div class="chat-body" id="chatbotBody">
+            <!-- MENSAJES DINÁMICOS -->
+        </div>
+
+    </div>
+
+</div>
+<script src="js/chatbot.js"></script>
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <img src="img/Logo 1.png" alt="logo">
+    </a>
+
+    <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+       <span></span><span></span><span></span>
+    </button>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nuestra_empresa.html">Nuestra Empresa</a>
+        <a href="beneficio.html">Beneficio</a>
+        <a href="trabaja.html" class="active">Trabaja con Nosotros</a>
+        <a href="contacto.html" class="nav-contact-link">Contacto</a>
+    </nav>
+
+    <a href="contacto.html" class="btn-contacto">Contacto</a>
+</header>
+<!-- HERO -->
+<section class="trabaja-hero">
+    <img src="img/Frame 5.png" alt="">
+</section>
+
+<!-- TITULO AZUL -->
+<section class="convocatoria">
+    <h2>Convocatorias de trabajo</h2>
+</section>
+
+<!-- INFO -->
+<section class="trabaja-info">
+
+    <div class="info-container">
+
+        <div class="info-text">
+            <h2>¿Deseas trabajar con nosotros?</h2>
+            <p>
+                Tenemos ofertas laborales competitivas para ti.
+                Únete a nuestro equipo y crece con nosotros.
+            </p>
+        </div>
+
+        <div class="info-img">
+            <img src="img/Imagen 8.jpeg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BOTÓN -->
+<section class="vacantes-section">
+    <button id="openModal">Conoce Nuestras Vacantes</button>
+</section>
+
+<section class="why">
+
+    <div class="why-container">
+
+        <h2>¿Necesitas más Información?</h2>
+
+        <div class="why-grid">
+
+            <div class="why-item">
+                <p>Tenemos un equipo de personas a tu disposicion para solventar tu disposicion<br>
+                    para solventar tus necesidades, escribenos<br>
+                    nuestro equipo te contestara lo antes posible.
+                </p>
+
+            </div>
+            <div class="why-btn">
+           <button onclick="location.href='contacto.html'">Contáctanos</button>
+            </div>
+     
+
+        </div>
+    
+
+</section>
+<!-- MODAL -->
+<!-- MODAL -->
+<div id="modal" class="modal">
+
+    <div class="modal-content formulario-modal">
+
+        <!-- CERRAR -->
+        <span class="close">&times;</span>
+
+        <!-- HEADER -->
+        <div class="form-header">
+
+            <h2>¿Quieres trabajar con nosotros?</h2>
+
+            <p>
+                Completa este formulario para postularte a nuestras vacantes.
+                Nuestro equipo de Gestión Humana evaluará tu perfil.
+            </p>
+
+        </div>
+
+        <!-- FORMULARIO -->
+        <form id="trabajoForm"
+            action="https://formsubmit.co/jpovalle211@gmail.com"
+            method="POST"
+            enctype="multipart/form-data">
+
+            <!-- CONFIG FORMSUBMIT -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <!-- NOMBRE -->
+            <div class="input-group">
+                <label>Nombre completo</label>
+                <input type="text" name="Nombre" required>
+            </div>
+
+            <!-- TELEFONO -->
+            <div class="input-group">
+                <label>Número de teléfono</label>
+                <input type="tel" name="Telefono" required>
+            </div>
+
+            <!-- CORREO -->
+            <div class="input-group">
+                <label>Correo electrónico</label>
+                <input type="email" name="Correo" required>
+            </div>
+
+            <!-- CEDULA -->
+            <div class="input-group">
+                <label>Cédula</label>
+                <input type="number" name="Cedula" required>
+            </div>
+
+            <!-- EXPERIENCIA -->
+            <div class="input-group">
+
+                <label>¿Tienes experiencia laboral?</label>
+
+                <select id="experiencia" name="Experiencia" required>
+                    <option value="">Selecciona</option>
+                    <option value="Si">Sí</option>
+                    <option value="No">No</option>
+                </select>
+
+            </div>
+
+            <!-- EXPERIENCIA AVICOLA -->
+            <div id="avicolaBox" style="display:none;">
+
+                <div class="input-group">
+
+                    <label>¿Tienes experiencia en avícola?</label>
+
+                    <select id="avicola" name="Experiencia Avicola">
+
+                        <option value="">Selecciona</option>
+                        <option value="Si">Sí</option>
+                        <option value="No">No</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- OTRA EXPERIENCIA -->
+            <div id="otraExperienciaBox" style="display:none;">
+
+                <div class="input-group">
+
+                    <label>¿En qué has trabajado?</label>
+
+                    <textarea
+                        name="Otra Experiencia"
+                        rows="4"></textarea>
+
+                </div>
+
+            </div>
+
+            <!-- TRANSPORTE -->
+            <div class="input-group">
+
+                <label>¿Tienes transporte propio?</label>
+
+                <select id="transporte" name="Transporte" required>
+
+                    <option value="">Selecciona</option>
+                    <option value="Si">Sí</option>
+                    <option value="No">No</option>
+
+                </select>
+
+            </div>
+
+            <!-- TIPO TRANSPORTE -->
+            <div id="tipoTransporteBox" style="display:none;">
+
+                <div class="input-group">
+
+                    <label>Tipo de transporte</label>
+
+                    <select name="Tipo Transporte">
+
+                        <option value="">Selecciona</option>
+                        <option value="Moto">Moto</option>
+                        <option value="Carro">Carro</option>
+                        <option value="Otro">Otro</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- VIVE CERCA -->
+            <div id="viveCercaBox" style="display:none;">
+
+                <div class="input-group">
+
+                    <label>
+                        ¿Vives cerca a Puerto Espejo o Pueblo Tapado?
+                    </label>
+
+                    <select id="viveCerca" name="Vive Cerca">
+
+                        <option value="">Selecciona</option>
+                        <option value="Si">Sí</option>
+                        <option value="No">No</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- ESTATURA -->
+            <div class="input-group">
+
+                <label>Estatura</label>
+
+                <input
+                    type="number"
+                    step="0.01"
+                    placeholder="Ejemplo: 1.70"
+                    name="Estatura">
+
+            </div>
+
+            <!-- EDAD -->
+            <div class="input-group">
+
+                <label>Edad</label>
+
+                <input
+                    type="number"
+                    id="edad"
+                    name="Edad"
+                    required>
+
+            </div>
+
+            <!-- HOJA DE VIDA -->
+            <div class="input-group">
+
+                <label>Adjunta tu hoja de vida</label>
+
+                <input
+                    type="file"
+                    name="attachment"
+                    accept=".pdf,.doc,.docx"
+                    required>
+
+            </div>
+
+            <!-- PUNTAJE -->
+            <input
+                type="hidden"
+                name="Puntaje"
+                id="puntajeInput">
+
+            <!-- RESUMEN -->
+            <input
+                type="hidden"
+                name="Resumen"
+                id="resumenInput">
+
+            <!-- TARJETA -->
+            <div class="resultado-card">
+
+                <h3>Resumen del Aspirante</h3>
+
+                <div id="resultadoContenido">
+
+                    <p>
+                        Completa el formulario para ver el puntaje.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BOTON -->
+            <button type="submit" class="btn-enviar">
+
+                Enviar Postulación
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+
+const modal = document.getElementById("modal");
+const btn = document.getElementById("openModal");
+const close = document.querySelector(".close");
+
+btn.onclick = () => {
+    modal.style.display = "flex";
+}
+
+close.onclick = () => {
+    modal.style.display = "none";
+}
+
+window.onclick = (e) => {
+    if(e.target === modal){
+        modal.style.display = "none";
+    }
+}
+
+
+// ELEMENTOS
+
+const experiencia =
+document.getElementById("experiencia");
+
+const avicolaBox =
+document.getElementById("avicolaBox");
+
+const otraExperienciaBox =
+document.getElementById("otraExperienciaBox");
+
+const transporte =
+document.getElementById("transporte");
+
+const tipoTransporteBox =
+document.getElementById("tipoTransporteBox");
+
+const viveCercaBox =
+document.getElementById("viveCercaBox");
+
+const form =
+document.getElementById("trabajoForm");
+
+const resultadoContenido =
+document.getElementById("resultadoContenido");
+
+
+// EXPERIENCIA
+
+experiencia.addEventListener("change", () => {
+
+    if(experiencia.value === "Si"){
+
+        avicolaBox.style.display = "block";
+        otraExperienciaBox.style.display = "none";
+
+    }else{
+
+        avicolaBox.style.display = "none";
+        otraExperienciaBox.style.display = "none";
+
+    }
+
+});
+
+
+// EXPERIENCIA AVICOLA
+
+document.getElementById("avicola")
+.addEventListener("change", (e)=>{
+
+    if(e.target.value === "No"){
+
+        otraExperienciaBox.style.display = "block";
+
+    }else{
+
+        otraExperienciaBox.style.display = "none";
+
+    }
+
+});
+
+
+// TRANSPORTE
+
+transporte.addEventListener("change", ()=>{
+
+    if(transporte.value === "Si"){
+
+        tipoTransporteBox.style.display = "block";
+        viveCercaBox.style.display = "none";
+
+    }else{
+
+        tipoTransporteBox.style.display = "none";
+        viveCercaBox.style.display = "block";
+
+    }
+
+});
+
+
+// ACTUALIZAR TARJETA
+
+form.addEventListener("change", actualizarCard);
+
+function actualizarCard(){
+
+    let puntos = 0;
+
+    const experienciaValue =
+    experiencia.value;
+
+    const avicola =
+    document.getElementById("avicola").value;
+
+    const transporteValue =
+    transporte.value;
+
+    const viveCerca =
+    document.getElementById("viveCerca").value;
+
+    const edad =
+    parseInt(document.getElementById("edad").value);
+
+    // EXPERIENCIA
+
+    if(experienciaValue === "Si"){
+        puntos += 30;
+    }
+
+    // AVICOLA
+
+    if(avicola === "Si"){
+        puntos += 30;
+    }
+
+    // TRANSPORTE
+
+    if(transporteValue === "Si"){
+        puntos += 20;
+    }
+
+    // VIVE CERCA
+
+    if(viveCerca === "Si"){
+        puntos += 20;
+    }
+
+    // EDAD
+
+    if(edad >= 18 && edad <= 50){
+        puntos += 20;
+    }
+
+    // MAXIMO 100
+
+    if(puntos > 100){
+        puntos = 100;
+    }
+
+    // GUARDAR PUNTAJE
+
+    document.getElementById("puntajeInput")
+    .value = puntos + "/100";
+
+    // RESUMEN
+
+    const resumen = `
+PUNTAJE: ${puntos}/100
+
+Experiencia: ${experienciaValue}
+Experiencia Avícola: ${avicola}
+Transporte: ${transporteValue}
+Vive Cerca: ${viveCerca}
+Edad: ${edad}
+`;
+
+    document.getElementById("resumenInput")
+    .value = resumen;
+
+    // TARJETA VISUAL
+
+    resultadoContenido.innerHTML = `
+
+        <div class="puntaje">
+            ${puntos}/100
+        </div>
+
+        <p>
+            <strong>Experiencia:</strong>
+            ${experienciaValue || "No responde"}
+        </p>
+
+        <p>
+            <strong>Experiencia Avícola:</strong>
+            ${avicola || "No responde"}
+        </p>
+
+        <p>
+            <strong>Transporte:</strong>
+            ${transporteValue || "No responde"}
+        </p>
+
+        <p>
+            <strong>Vive Cerca:</strong>
+            ${viveCerca || "No responde"}
+        </p>
+
+        <p>
+            <strong>Edad:</strong>
+            ${edad || "No responde"}
+        </p>
+
+    `;
+}
+
+</script>
+
+</body>
+</html>

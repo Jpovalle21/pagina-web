@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Empresa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!-- BOTÓN WHATSAPP -->
+<!-- CHATBOT WHATSAPP -->
+<div class="chatbot-container">
+
+    <!-- BOTÓN -->
+    <div class="chatbot-btn" id="chatbotBtn">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- CHAT -->
+    <div class="chatbot-chat" id="chatbotChat">
+
+        <div class="chat-header">
+            <span>Agro Ángeles</span>
+            <button id="chatbotClose">✕</button>
+        </div>
+
+        <div class="chat-body" id="chatbotBody">
+            <!-- MENSAJES DINÁMICOS -->
+        </div>
+
+    </div>
+
+</div>
+<script src="js/chatbot.js"></script>
+<body>
+
+<!-- NAVBAR (igual al inicio) -->
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <img src="img/Logo 1.png" alt="logo">
+    </a>
+    <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+       <span></span><span></span><span></span>
+    </button>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nuestra_empresa.html" class="active">Nuestra Empresa</a>
+        <a href="beneficio.html">Beneficio</a>
+        <a href="trabaja.html">Trabaja con Nosotros</a>
+        <a href="contacto.html" class="nav-contact-link">Contacto</a>
+    </nav>
+
+
+    <a href="contacto.html" class="btn-contacto">Contacto</a>
+</header>
+
+<!-- HERO -->
+<section class="empresa-hero">
+    <img src="img/Frame 3.png" alt="Nuestra empresa">
+</section>
+
+<!-- CONTENIDO -->
+<section class="empresa">
+
+    <div class="empresa-container">
+
+        <!-- TEXTO -->
+        <div class="empresa-text">
+            <h2>NUESTRA HISTORIA</h2>
+
+            <p>
+                Agro anngeles fue fundada en Enero del 2022 por un grupo de
+                emprendedores visionarios, unidos por la avicultura y el desarrollo sostenible,
+                eligiendo como sede la ciudad de Armenia, con su rica tradicion agricola y 
+                ubicacion estrategica en el eje cafetero de Colombia.
+            </p>
+
+            <p>
+                Nuestro enfoque en la calidad nos ha permitido convertirnos en un referente
+                en la producción y servicios avícolas, con una sólida reputación a nivel
+                regional y nacional.
+            </p>
+        </div>
+
+        <!-- IMAGEN -->
+        <div class="empresa-img">
+            <img src="img/Imagen 4.jpeg" alt="Empresa">
+        </div>
+
+    </div>
+
+</section>
+<section class="features">
+
+    <div class="features-container">
+
+        <!-- CARD 1 -->
+        <div class="feature-card">
+            <div class="card-header">
+                <h3>Tecnologia</h3>
+                <img src="img/logo 2.png" alt="">
+            </div>
+
+            <div class="line"></div>
+
+            <p>
+                Implementamos sistemas de monitoreo, control y tecnicas avanzadas
+                de pensamineto para garantizar la eficiencia y la calidad en todas las etapas de producción.
+            </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="feature-card">
+            <div class="card-header">
+                <h3>Crecimiento</h3>
+                <img src="img/mini logo 3.png" alt="">
+            </div>
+
+            <div class="line"></div>
+
+            <p>
+                En agroangeles somos proveedores confiables en el procesmaiento avicola
+                de alta calidad a nivel regional, nacional, gracias a nuestras practicas responsables.
+            </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="feature-card">
+            <div class="card-header">
+                <h3>Impacto Social</h3>
+                <img src="img/mini logo 1.png" alt="">
+            </div>
+
+            <div class="line"></div>
+
+            <p>
+                Nuestros programas de responsabilidad social y empleo en la ciudad y departamento
+                fomentan el desarrollo sostenible y la mejora de la calidad de vida de las personas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- MISIÓN -->
+<section class="mision">
+
+    <div class="mision-container">
+
+        <!-- TEXTO -->
+        <div class="mision-text">
+            <h2><span class="negro">Nuestra</span> <span class="rojo">Misión</span></h2>
+
+            <p>
+                Ser líderes en la industria avícola, ofreciendo productos y servicios
+                de la más alta calidad para el bienestar de las familias de la región
+                del eje cafetero y Colombia.
+            </p>
+
+            <p><strong>Calidad:</strong> Ofrecer servicios avícolas seguros que garanticen la calidad en cada etapa de producción.</p>
+
+            <p><strong>Innovación:</strong> Aplicamos nuevas tecnologías para mejorar la eficiencia, la calidad y la sostenibilidad de la producción.</p>
+
+            <p><strong>Sostenibilidad:</strong> Utilizamos los recursos de manera eficiente y responsable.</p>
+
+            <p><strong>Bienestar:</strong> Contribuir al bienestar de la comunidad local a través de programas sociales y ambientales.</p>
+        </div>
+
+        <!-- DECORACIÓN -->
+        <div class="mision-img" aria-hidden="true"></div>
+
+    </div>
+
+</section>
+<!-- VISIÓN -->
+<section class="vision">
+
+    <div class="vision-container">
+
+        <!-- TEXTO -->
+        <div class="vision-text">
+            <h2><span class="negro">Nuestra</span> <span class="rojo">Visión</span></h2>
+
+            <p>
+                Ser la procesadora avícola líder en la región y referente en calidad,
+                innovación y sostenibilidad a nivel nacional e internacional.
+            </p>
+
+            <p>
+                Nuestro objetivo es convertirnos en un aliado confiable para los productores
+                avícolas de la región, brindándoles un servicio integral que incluye
+                asesoramiento técnico y la adopción de prácticas agrícolas sostenibles.
+            </p>
+
+            <p>
+                Buscamos constantemente nuevas tecnologías y métodos de producción más eficientes
+                y respetuosos con el medio ambiente, con el objetivo de minimizar nuestro impacto
+                en el ecosistema y contribuir al desarrollo sostenible de la industria avícola.
+            </p>
+        </div>
+
+        <!-- DECORACIÓN -->
+        <div class="vision-img" aria-hidden="true"></div>
+
+    </div>
+
+</section>
+<!-- HISTORIA -->
+<section class="historia-header">
+    <h2>Nuestra historia</h2>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline">
+
+    <div class="timeline-line"></div>
+
+    <!-- ITEM -->
+    <div class="timeline-item right">
+        <div class="content">
+            <h3>Fundación</h3>
+            <p>Agro Ángeles fue fundada por un grupo de emprendedores visionarios con pasión por la avicultura.</p>
+        </div>
+        <span class="year">2022</span>
+    </div>
+
+    <div class="timeline-item left">
+        <div class="content">
+            <h3>Proyección</h3>
+            <p>Trabajamos para consolidarnos como procesadora avícola con planificación estratégica.</p>
+        </div>
+        <span class="year">2023</span>
+    </div>
+
+    <div class="timeline-item right">
+        <div class="content">
+            <h3>Crecimiento</h3>
+            <p>Logramos procesar más de 5 millones de pollos con alta calidad.</p>
+        </div>
+        <span class="year">2024</span>
+    </div>
+
+    <div class="timeline-item left">
+        <div class="content">
+            <h3>Consolidación</h3>
+            <p>Para el 2025, logramos alcanzar la meta de generar mas de 100 empleos
+               directos posicionándonos como referentes en el desarrollo de la región.
+            </p>
+        </div>
+        <span class="year">2025</span>
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="cta-content">
+        <h2>¿Necesitas Ayuda?</h2>
+        <p>Contáctanos</p>
+        <div class="why-btn">
+            <button onclick="location.href='contacto.html'">Permítenos asesorarte</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

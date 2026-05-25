@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Ángeles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!-- BOTÓN WHATSAPP -->
+<!-- CHATBOT WHATSAPP -->
+<div class="chatbot-container">
+
+    <!-- BOTÓN -->
+    <div class="chatbot-btn" id="chatbotBtn">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- CHAT -->
+    <div class="chatbot-chat" id="chatbotChat">
+
+        <div class="chat-header">
+            <span>Agro Ángeles</span>
+            <button id="chatbotClose">✕</button>
+        </div>
+
+        <div class="chat-body" id="chatbotBody">
+            <!-- MENSAJES DINÁMICOS -->
+        </div>
+
+    </div>
+
+</div>
+<script src="js/chatbot.js"></script>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <img src="img/Logo 1.png" alt="logo">
+    </a>
+    <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+       <span></span><span></span><span></span>
+    </button >
+    <nav>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="nuestra_empresa.html">Nuestra Empresa</a>
+        <a href="beneficio.html">Beneficio</a>
+        <a href="trabaja.html">Trabaja con Nosotros</a>
+        <a href="contacto.html" class="nav-contact-link">Contacto</a>
+    </nav>
+
+
+    <a href="contacto.html" class="btn-contacto">Contacto</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+    <!-- IMAGEN IZQUIERDA (FORMA ROJA) -->
+    <div class="hero-left">     
+        <!-- FORMA ROJA REAL (CURVA PERFECTA) -->
+       <svg class="hero-shape" viewBox="0 0 828.44 1082.16" preserveAspectRatio="none">
+        <rect fill="#780000" x="3.35" y="1.33" width="241.77" height="1080.83"/>
+        <path fill="#780000" d="M248.69,1.83h16.06c135.41,0,245.34,109.93,245.34,245.34v254.96c0,135.41-109.93,245.34-245.34,245.34h-16.05c-135.41,0-245.34-109.93-245.34-245.34v-254.96C3.35,111.77,113.29,1.83,248.69,1.83Z"/>
+        <path fill="#780000" d="M730.6,518.22c-37.13-28.67-71.84-44.54-95.77-53.49,11.74-15.58,142.31-193.84,83.34-360.33-14.85-41.91-38.94-75.24-66.51-104.4H0v188.11c37.36,2.97,86.07,8.96,157.5,29.04,74.23,20.86,131.12,37.43,193.87,83.13,83.22,60.62,131.74,139.71,157.35,189.8-35.87,13.69-179.05,73.66-260.14,249.34-5.57,12.07-70.06,157.32-43.05,342.45h373.22c-13.04-224.7-149.79-348.53-98.79-429.69,20.38-32.43,58.38-38.38,107.91-46.12,132.94-20.8,227.79,55.33,239.53,31.62,9.68-19.55-49.55-82.99-96.79-119.47Z"/>
+       </svg>
+
+        <div class="hero-text">
+            <span>Agro Ángeles, lo que tu empresa necesita</span>
+
+            <h1>
+                Calidad,<br>
+                Responsabilidad,<br>
+                Sostenibilidad
+            </h1>
+
+            <p>
+                La calidad, la responsabilidad y la<br>
+                sostenibilidad se fusionan para redefinir la<br>
+                excelencia en nuestro servicio, desde<br>
+                Armenia para toda Colombia.
+            </p>
+        </div>
+    </div>
+
+    <!-- IMAGEN DERECHA -->
+    <div class="hero-right"></div>
+
+</section>
+
+<!-- BARRA INFERIOR -->
+<div class="hero-bar">
+    Agro Ángeles, su aliado de confianza
+</div>
+<!-- QUIENES SOMOS -->
+<section class="about">
+
+    <div class="about-container">
+
+        <!-- TEXTO -->
+        <div class="about-text">
+            <h2>¿Quiénes <span>somos?</span></h2>
+
+            <p>
+               Somos una procesadora avícola con experiencia en el beneficio de la
+               especie aviar, nos hemos convertido en líderes del procesamiento avícola 
+               con calidad, responsabilidad y sostenibilidad. 
+               Ubicados en el km 3 via Armenia-Pueblo Tapado vereda aguacatal 
+               Armenia-Quindio Colombia.
+            </p>
+
+            <!-- BARRAS -->
+            <div class="skill">
+                <p>Experiencia</p>
+                <div class="bar">
+                    <div class="progress" style="width: 100%;">
+                        <span>100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Eficiencia</p>
+                <div class="bar">
+                    <div class="progress" style="width: 100%;">
+                        <span>100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Calidad</p>
+                <div class="bar">
+                    <div class="progress" style="width: 100%;">
+                        <span>100%</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- IMAGEN -->
+        <div class="about-img">
+            <img src="img/Imagen 2.jpeg" alt="about">
+        </div>
+
+    </div>
+    <!-- SECCIÓN TARJETAS -->
+<section class="features">
+
+    <div class="features-container">
+
+        <!-- CARD 1 -->
+        <div class="feature-card">
+            <div class="card-header">
+                <h3>Calidad</h3>
+                <img src="img/mini logo 1.png" alt="">
+            </div>
+
+            <div class="line"></div>
+
+            <p>
+                Implementamos estándares de bioseguridad y bienestar animal
+                garantizando calidad e inocuidad en el servicio.
+            </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="feature-card">
+            <div class="card-header">
+                <h3>Sostenibilidad Ambiental</h3>
+                <img src="img/logo 2.png" alt="">
+            </div>
+
+            <div class="line"></div>
+
+            <p>
+                Minimizamos nuestro impacto ambiental mediante prácticas
+                responsables y comprometidas con el planeta.
+            </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="feature-card">
+            <div class="card-header">
+                <h3>RESPONSABILIDAD</h3>
+                <img src="img/mini logo 3.png" alt="">
+            </div>
+
+            <div class="line"></div>
+
+            <p>
+                Con pequeños detalles de todas las áreas encargadas del proceso 
+                de producción aviar estamos comprometidos a brindar a nuestros
+                clientes productos de alta calidad y garantizando la inocuidad a sus
+                mesas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+<!-- SECCIÓN: ¿POR QUÉ ESCOGER NUESTROS SERVICIOS? -->
+<section class="why">
+
+    <div class="why-container">
+
+        <h2>¿Por que escoger nuestros servicios?</h2>
+
+        <div class="why-grid">
+
+            <div class="why-item">
+                <h3>Tecnología</h3>
+                <div class="line"></div>
+                <p>Sistema de monitoreo y control para la eficiencia y la calidad.</p>
+                <p>Técnicas avanzadas de procesamiento.</p>
+            </div>
+
+            <div class="why-item">
+                <h3>Reconocimiento</h3>
+                <div class="line"></div>
+                <p>Reputación como proveedor confiable de servicios de procesamiento avícola.</p>
+                <p>Clientes de reconocimiento nacional.</p>
+            </div>
+
+            <div class="why-item">
+                <h3>Eficacia</h3>
+                <div class="line"></div>
+                <p>Programas de producción avanzada - Garantizar procesos con eficiencia y calidad</p>
+            
+            </div>
+
+        </div>
+
+        <div class="why-btn">
+           <button onclick="location.href='contacto.html'">Contáctanos</button>
+        </div>
+
+    </div>
+
+</section>
+<!-- PREGUNTAS FRECUENTES -->
+<section class="faq">
+
+    <div class="faq-container">
+
+        <!-- IMAGEN -->
+        <div class="faq-img">
+            <img src="img/imagen 3.jpg" alt="Preguntas frecuentes">
+        </div>
+
+        <!-- TEXTO -->
+        <div class="faq-text">
+
+            <h2>Preguntas <span>frecuentes</span></h2>
+
+            <div class="faq-item">
+                <h3>¿Cómo trabajamos?</h3>
+                <p>
+                    Revisa nuestras vacantes en redes sociales y aplica enviando tu hoja de vida
+                    al correo electrónico gestionhumana@agroangeles.com o escribe al
+                    WhatsApp 3106847615.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Dónde quedamos ubicados?</h3>
+                <p>
+                    Ubicados en el km 3 via Armenia-Pueblo Tapado vereda aguacatal Armenia-Quindio Colombia.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cuáles son los procesos que realizamos?</h3>
+                <p>
+                    Sacrificio y beneficio de aves<br>
+                    Clasificación de canales de pollo por rango
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BARRA INFERIOR -->
+<div class="hero-bar">
+    Agro Ángeles, su aliado de confianza
+</div>
+
+</body>
+</html>

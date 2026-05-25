@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!-- BOTÓN WHATSAPP -->
+<!-- CHATBOT WHATSAPP -->
+<div class="chatbot-container">
+
+    <!-- BOTÓN -->
+    <div class="chatbot-btn" id="chatbotBtn">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- CHAT -->
+    <div class="chatbot-chat" id="chatbotChat">
+
+        <div class="chat-header">
+            <span>Agro Ángeles</span>
+            <button id="chatbotClose">✕</button>
+        </div>
+
+        <div class="chat-body" id="chatbotBody">
+            <!-- MENSAJES DINÁMICOS -->
+        </div>
+
+    </div>
+
+</div>
+<script src="js/chatbot.js"></script>
+ 
+<body>
+   
+    <header class="navbar">
+    <a href="index.html" class="logo">
+        <img src="img/Logo 1.png" alt="logo">
+    </a>
+    <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nuestra_empresa.html">Nuestra Empresa</a>
+        <a href="beneficio.html">Beneficio</a>
+        <a href="trabaja.html">Trabaja con Nosotros</a>
+        <a href="contacto.html" class="nav-contact-link">Contacto</a>
+    </nav>
+
+
+    <a href="contacto.html" class="btn-contacto">Contacto</a>
+</header>
+<section class="contact-section">
+
+    <div class="contact-container">
+
+        <!-- LADO IZQUIERDO -->
+        <div class="contact-info">
+            <h3>Contáctanos</h3>
+
+            <p>📍 km 3 via Armenia-Pueblo Tapado vereda aguacatal 
+                  Armenia-Quindio Colombia.</p>
+            <p>📞 +57 3106847615</p>
+            <p>✉️ gestionhumana@agroangeles.com</p>
+        </div>
+
+        <!-- LADO DERECHO -->
+        <div class="contact-form">
+            <h2>Escríbenos</h2>
+
+            <p>
+                Estamos prestos para solucionar todas tus inquietudes,
+                nuestro personal te contactará lo antes posible.
+            </p>
+
+            <form action="https://formsubmit.co/jpovalle211@gmail.com" method="POST" >
+                <input type="text" placeholder="Nombre Completo" name="name">
+                <input type="email" placeholder="Correo Electrónico" name="email">
+                <textarea placeholder="Escribe tu mensaje" name="message"></textarea>
+
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+            </form>
+        </div>
+
+    </div>
+
+</section>
+<section class="ubicacion">
+    <h2>Ubicación</h2>
+
+    <div class="mapa">
+    <iframe 
+        src="https://www.google.com/maps?q=4.5151598,-75.7415234&hl=es&z=16&output=embed"
+        loading="lazy">
+    </iframe>
+    </div>
+</section>
+</body>
+</html>
