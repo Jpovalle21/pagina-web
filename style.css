@@ -172,6 +172,27 @@ img {
     font-weight: bold;
 }
 
+@media (min-width: 769px) {
+    .home-screen {
+        min-height: 100vh;
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        background: #780000;
+    }
+
+    .home-screen > .navbar,
+    .home-screen > .hero-bar {
+        flex: 0 0 auto;
+    }
+
+    .home-screen > .hero {
+        flex: 1 1 auto;
+        height: auto;
+        min-height: 0;
+    }
+}
+
 /* =============================================
    ABOUT
 ============================================= */
